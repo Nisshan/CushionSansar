@@ -24,7 +24,39 @@
   <component name="ChangeListManager">
     <list default="true" id="5ae7aa1c-b0c5-4540-b407-d032d79c608c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DataTables/UsersDataTable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Frontend/Pages/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Frontend/Pages/Home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/layout/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layout/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/frontend/pages/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/frontend/pages/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/livewire-tmp/0LnCA9ik8DIXbxzagA6lZk5ILiKad6-metaMjAxNjEyMTZfMDgzNzQ0LmpwZw==-.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/livewire-tmp/1nTNAIAehXYsa7wNwNlILUBFZxmxQ1-metaMjAxNjEyMTZfMTAxNDU5LmpwZw==-.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/livewire-tmp/A9uZuizeSAcey8JDrbjk7AxCdWUCN1-metaMjAxNjEyMTZfMDgzNzQ0LmpwZw==-.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/livewire-tmp/ESpINAfaVRLPrq4dI4bBpjOx4TimXv-metaMjAxNjEyMTZfMTAxNDU5LmpwZw==-.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/livewire-tmp/GN7hFabhvnjG2tqPguuaVXLR52XJ7X-metaMjAxNjEyMTZfMDg0MjU0LmpwZw==-.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/livewire-tmp/J8kP7hfBfi8tbAj7jQ7bvdhf5Z3ZVx-metaMjAxNjEyMTZfMDkzMzMwLmpwZw==-.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/livewire-tmp/JIElxInMk8EWa1RRxAMlHEu62eQQ2Q-metaY292ZXJMZXR0ZXIuanBn-.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/livewire-tmp/Lk3BtoHwaFHMSp1hHzYiPJbQlCpTCf-metaMjAxNjEyMTZfMTAxNDU5LmpwZw==-.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/livewire-tmp/PokOKCiw1rDj79DIw4OyvZuoWkEG1v-metaMjAxNjEyMTZfMDgzNzQ0LmpwZw==-.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/livewire-tmp/RSJ4ZxqsmiwZQsecwjsk95OVQFlBfs-metaMjAxNjEyMTZfMDkzMzMwLmpwZw==-.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/livewire-tmp/WN3hbENVHx571s2TQnFt3k5brLNe9i-metaMjAxNjEyMTZfMDgzNzQ0LmpwZw==-.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/livewire-tmp/WcfnSlDXn75fhVtWCqdtguVUVrtj50-metaMjAxNjEyMTZfMDg0MjU0LmpwZw==-.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/livewire-tmp/ekWIfl6D4CKv32amlZMQ88dcdZF4Qs-metaY292ZXJMZXR0ZXIuanBn-.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/livewire-tmp/f2EtZQDlEGtuAALAxmOAkC0FcQgE7O-metaMjAxNjEyMTZfMDg0MjU0LmpwZw==-.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/livewire-tmp/fUvaYr2mZNHPgqcgqvrnHg9WvGbe62-metaMjAxNjEyMTZfMDkzMzMwLmpwZw==-.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/livewire-tmp/iS4RfjtyVizIqmjtKQUiov11CJkLLJ-metaMjAxNjEyMTZfMDgzNzQ0LmpwZw==-.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/livewire-tmp/lgTPmX4IYAEgdFfxKGZIPBmqnanBz4-metaMjAxNjEyMTZfMDg0MjU0LmpwZw==-.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/livewire-tmp/lpQOrRrDNLH58WsI0DgotZt4fJ07Xm-metaMjAxNjEyMTZfMDg0MjU0LmpwZw==-.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/livewire-tmp/pYjR0cp8AkrVdVWH6234mRLco3ILl6-metaMjAxNjEyMTZfMTAxNDU5LmpwZw==-.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/livewire-tmp/uQ5X4Wpj53376gqhoACb7MYbWsHGHV-metaMjAxNjEyMTZfMDkzMzMwLmpwZw==-.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/livewire-tmp/wjec5jVka7O28m1vu0G2xie24k001y-metaMjAxNjEyMTZfMDg0MjU0LmpwZw==-.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/livewire-tmp/y8PytZ17j4v9Rmx5fU5ByJPlxQTy5M-metaMjAxNjEyMTZfMDkzMzMwLmpwZw==-.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/livewire-tmp/zPhNuwyHmb3Pi4eNfHupkAPubSmQOw-metaMjAxNjEyMTZfMDkzMzMwLmpwZw==-.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/livewire-tmp/zgcI1fSK9DMq6VkeQ4mxn2hJI1t6M3-metaMjAxNjEyMTZfMDg0MjU0LmpwZw==-.jpeg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,6 +204,7 @@
       <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
       <path value="$PROJECT_DIR$/vendor/myclabs/php-enum" />
       <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hfqpbxGC7j9Z1NMuTLy2GXyJwi" />
@@ -305,10 +338,10 @@
       <screen x="0" y="27" width="1366" height="703" />
     </state>
     <state x="172" y="27" width="1012" height="703" key="SettingsEditor/0.27.1366.703@0.27.1366.703" timestamp="1601189086389" />
-    <state x="346" y="51" width="672" height="678" key="search.everywhere.popup" timestamp="1601449342401">
+    <state x="346" y="51" width="672" height="678" key="search.everywhere.popup" timestamp="1601536670283">
       <screen x="0" y="27" width="1366" height="703" />
     </state>
-    <state x="346" y="51" width="672" height="678" key="search.everywhere.popup/0.27.1366.703@0.27.1366.703" timestamp="1601449342401" />
+    <state x="346" y="51" width="672" height="678" key="search.everywhere.popup/0.27.1366.703@0.27.1366.703" timestamp="1601536670283" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

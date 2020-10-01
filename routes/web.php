@@ -18,7 +18,6 @@ Auth::routes();
 
 Route::get('/', \App\Http\Livewire\Frontend\Pages\Home::class)->name('home');
 
-
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/users/create', \App\Http\Livewire\User\Create::class)->name('users.create');
     Route::get('users/{id}/edit', \App\Http\Livewire\User\Edit::class)->name('users.edit');

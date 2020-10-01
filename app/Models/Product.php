@@ -25,5 +25,20 @@ class Product extends Model
         return $this->hasMany(ProductImages::class);
     }
 
+    public function imagePath()
+    {
+        return 'storage/products/'. $this->image;
+    }
+
+    public function scopeIsHero($query)
+    {
+        return $query->where('is_hero',1);
+    }
+
+    public function scopeStatus($query)
+    {
+        return $query->where('status',1);
+    }
+
 
 }

@@ -13,6 +13,7 @@
 
 
     <link rel="icon" href="{{asset('frontend/img/favicon.png')}}">
+    <script src="https://kit.fontawesome.com/57cafae363.js" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{asset('frontend/css/bootstrap.min.css')}}">
     <!-- animate CSS -->
@@ -20,7 +21,7 @@
     <!-- owl carousel CSS -->
     <link rel="stylesheet" href="{{asset('frontend/css/owl.carousel.min.css')}}">
     <!-- font awesome CSS -->
-    <link rel="stylesheet" href="{{asset('frontend/css/all.css')}}">
+
     <!-- flaticon CSS -->
     <link rel="stylesheet" href="{{asset('frontend/css/flaticon.css')}}">
     <link rel="stylesheet" href="{{asset('/frontend/css/themify-icons.css')}}">
@@ -39,8 +40,12 @@
 </head>
 
 <body>
+        {{-- Header--}}
+        <livewire:frontend.includes.header/>
         {{-- Body Content --}}
         @yield('content')
+
+        @include('frontend.includes.footer')
 
         {{-- Base Scripts --}}
         <!-- jquery plugins here-->

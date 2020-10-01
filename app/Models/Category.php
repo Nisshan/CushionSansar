@@ -16,4 +16,14 @@ class Category extends Model
         return $this->belongsToMany(Product::class);
     }
 
+    public function scopeToHome($query)
+    {
+        return $query->where('to_home',1);
+    }
+
+    public function scopeActive($query)
+    {
+        return $query->where('status',1);
+    }
+
 }
