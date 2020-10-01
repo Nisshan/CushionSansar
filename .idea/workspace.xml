@@ -23,6 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ae7aa1c-b0c5-4540-b407-d032d79c608c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/cushionSansar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cushionSansar.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/DataTables/UsersDataTable.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Frontend/Pages/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Frontend/Pages/Home.php" afterDir="false" />
