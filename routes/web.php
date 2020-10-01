@@ -16,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', \App\Http\Livewire\Frontend\Pages\Home::class)->name('home');
+
 
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/users/create', \App\Http\Livewire\User\Create::class)->name('users.create');
