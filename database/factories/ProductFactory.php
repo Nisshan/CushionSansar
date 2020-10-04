@@ -26,12 +26,11 @@ class ProductFactory extends Factory
         return [
             'name' => $name,
             'slug' => Str::slug($name),
-            'image' => $this->faker->imageUrl(),
             'description' => $this->faker->sentence,
             'meta_description' => $this->faker->word,
             'price' => rand(100, 1000),
             'is_popular' => rand(0, 1),
-            'is_hero' => rand(0, 1),
+            'is_trending' => rand(0, 1),
             'views' => rand(0, 100)
         ];
     }

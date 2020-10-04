@@ -31,14 +31,13 @@ class Create extends Component
         $this->validate();
 
         $image = $this->image->store('public/categories');
-        $path = explode('/',$image);
-        Category::create([
+        $path = explode('/', $image);
+        $category = Category::create([
             'name' => ucfirst($this->name),
             'slug' => Str::slug($this->name),
-            'image' => $path[2]
         ]);
-
-        session()->flash('success','Category Created Success');
+        $category->addMedia('storage/categories/' . $path[2])->toMediaCollection('category');
+        session()->flash('success', 'Category Created Success');
         return redirect()->route('categories.index');
     }
 

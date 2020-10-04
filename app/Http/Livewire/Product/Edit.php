@@ -17,11 +17,10 @@ class Edit extends Component
     public $description;
     public $image;
     public $price;
-    public $is_hero;
+    public $is_trending;
     public $is_popular;
     public $status;
     public $product_id;
-    public $updated_image;
     public $category = [];
     public $product;
     public $images;
@@ -29,11 +28,12 @@ class Edit extends Component
     public array $rules = [
         'name' => 'required| min:5',
         'description' => 'required',
-        'updated_image' => 'sometimes',
+        'image' => 'sometimes',
         'price' => 'required',
-        'is_hero' => 'required',
+        'is_trending' => 'required',
         'is_popular' => 'required',
         'status' => 'required',
+        'images' => 'sometimes'
     ];
 
     public function mount($id)
@@ -44,8 +44,7 @@ class Edit extends Component
         $this->price = $product->price;
         $this->is_popular = $product->is_popular;
         $this->status = $product->status;
-        $this->is_hero = $product->status;
-        $this->image = $product->image;
+        $this->is_trending = $product->is_trending;
         $this->product_id = $id;
         $this->product = $product;
     }
@@ -59,18 +58,19 @@ class Edit extends Component
         $product->price = $this->price;
         $product->status = $this->status;
         $product->is_popular = $this->is_popular;
-        $product->is_hero = $this->is_hero;
-        if ($this->updated_image) {
-            $this->uploadImage($product);
-        }
+        $product->is_trending = $this->is_trending;
         $product->save();
 
         if ($this->category) {
-            $product->categories()->sync($this->category);
+            $this->product->categories()->sync($this->category);
+        }
+
+        if ($this->image) {
+            $this->uploadImage($this->product);
         }
 
         if ($this->images) {
-            $this->uploadImages($product);
+            $this->uploadMultipleImage($this->product);
         }
 
         session()->flash('success', 'Product Updated Success');
@@ -79,29 +79,25 @@ class Edit extends Component
 
     public function uploadImage($product)
     {
-        Storage::disk('public')->delete('products/' . $product->image);
-        $image = $this->updated_image->store('public/products');
-        $path = (explode('/', $image));
-        return $product->image = $path[2];
-    }
-
-    public function uploadImages($product)
-    {
-        $this->deleteOldImages($product);
-        foreach ($this->images as $image) {
-            $path = $image->store('public/products');
-            $url = explode('/', $path);
-            $product->images()->create([
-                'url' => $url[2]
-            ]);
+        $oldimage = $product->getFirstMedia('product');
+        if ($oldimage) {
+            $oldimage->delete();
         }
+        $image = $this->image->store('public/product');
+        $path = explode('/', $image);
+        $product->addMedia('storage/product/' . $path[2])->toMediaCollection('product');
     }
 
-    public function deleteOldImages($product)
+    public function uploadMultipleImage($product)
     {
-        foreach ($product->images as $image) {
-            ProductImages::destroy($image->id);
-            Storage::disk('public')->delete('products/' . $image->url);
+        foreach ($product->getMedia('product-images') as $media) {
+            $media->delete();
+        }
+        foreach ($this->images as $image) {
+
+            $image = $image->store('public/product');
+            $path = explode('/', $image);
+            $product->addMedia('storage/product/' . $path[2])->toMediaCollection('product-images');
         }
     }
 

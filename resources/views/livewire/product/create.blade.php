@@ -91,15 +91,15 @@
 
                 <div class="form-group">
                     <div class="mb-3">
-                        <b>Is Hero<span class="required"> *</span> : </b>
+                        <b>Is Trending<span class="required"> *</span> : </b>
                     </div>
                     <label>
-                        <input type="radio" wire:model="is_hero"
+                        <input type="radio" wire:model="is_trending"
                                value="1"
                         > &nbsp; Yes
                     </label> &nbsp; &nbsp; &nbsp;
                     <label>
-                        <input type="radio" wire:model="is_hero" value="0"
+                        <input type="radio" wire:model="is_trending" value="0"
                         > &nbsp; No
                     </label> &nbsp;
                 </div>

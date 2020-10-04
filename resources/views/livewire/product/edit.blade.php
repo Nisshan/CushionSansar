@@ -47,11 +47,11 @@
                     <x-label for="image"/>
                     <span class="required"> *</span>
                     <div class="form-group">
-                        <x-input type="file" name="image" wire:model="updated_image" class="mb-1"/>
+                        <x-input type="file" name="image" wire:model="image" class="mb-1"/>
                         <x-error field="updated_image" class="error required"/>
                         <br>
 
-                        <img src="{{$updated_image ? $updated_image->temporaryurl() : url('storage/products/'.$image)}}"
+                        <img src="{{$image ? $image->temporaryurl() : $product->getFirstMediaUrl('product')}}"
                              style="height: 100px; width:100px">
                     </div>
                 </div>
@@ -70,9 +70,9 @@
                                      style="height: 100px; width:100px">
                             @endforeach
                         @else
-                            @if ($product->images)
-                                @foreach($product->images as $image)
-                                    <img src="{{ url('storage/products/'.$image->url)}}"
+                            @if ($product->getMedia())
+                                @foreach($product->getMedia('product-images') as $key => $image)
+                                    <img src="{{  $image->getUrl()}}"
                                          style="height: 100px; width:100px">
                                 @endforeach
                             @endif
@@ -98,15 +98,15 @@
 
                 <div class="form-group">
                     <div class="mb-3">
-                        <b>Is Hero<span class="required"> *</span> : </b>
+                        <b>IsTrending<span class="required"> *</span> : </b>
                     </div>
                     <label>
-                        <input type="radio" wire:model="is_hero"
+                        <input type="radio" wire:model="is_trending"
                                value="1"
                         > &nbsp; Yes
                     </label> &nbsp; &nbsp; &nbsp;
                     <label>
-                        <input type="radio" wire:model="is_hero" value="0"
+                        <input type="radio" wire:model="is_trending" value="0"
                         > &nbsp; No
                     </label> &nbsp;
                 </div>

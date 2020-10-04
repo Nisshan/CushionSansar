@@ -12,10 +12,6 @@ class Delete extends Component
 
     public function delete()
     {
-        foreach ($this->product->images as $image) {
-            Storage::disk('public')->delete('products/' . $image->url);
-        }
-        Storage::disk('public')->delete('products/' . $this->product->image);
         $this->product->delete();
         session()->flash('success', 'Product Deleted Success');
         return redirect()->route('products.index');

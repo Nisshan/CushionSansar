@@ -10,7 +10,7 @@ class ToHome extends Component
     public function render()
     {
         return view('livewire.frontend.partials.to-home',[
-            'category' => Category::active()->tohome()->first()
+            'category' => Category::first()
         ]);
     }
 }

@@ -15,12 +15,12 @@ class Edit extends Component
     public $status;
     public $category_id;
     public $image;
-    public $updated_image;
+    public $category;
 
     public array $rules = [
         'name' => 'required| min:3',
         'status' => 'required',
-        'updated_image' => 'sometimes'
+        'image' => 'sometimes'
     ];
 
     public function updated($propertyName)
@@ -28,18 +28,16 @@ class Edit extends Component
         $this->validateOnly($propertyName, [
             'name' => 'required|min:3',
             'status' => 'required',
-            'updated_image' => 'sometimes'
+            'image' => 'sometimes'
         ]);
     }
 
     public function mount($id)
     {
-        $category = Category::find($id);
-        $this->name = $category->name;
-        $this->status = $category->status;
-        $this->image = $category->image;
+        $this->category = Category::find($id);
+        $this->name = $this->category->name;
+        $this->status = $this->category->status;
         $this->category_id = $id;
-
     }
 
     public function save()
@@ -47,10 +45,11 @@ class Edit extends Component
         $category = Category::find($this->category_id);
         $category->name = ucfirst($this->name);
         $category->status = $this->status;
-        if ($this->updated_image) {
+        $category->save();
+
+        if ($this->image) {
             $this->uploadImage($category);
         }
-        $category->save();
         session()->flash('success', 'Category Updated Success');
         return redirect()->route('categories.index');
 
@@ -58,11 +57,15 @@ class Edit extends Component
 
     public function uploadImage($category)
     {
-        Storage::disk('public')->delete('categories/' . $category->image);
-        $image = $this->updated_image->store('public/categories');
+        $exists = $category->getFirstMedia('category');
+        if ($exists) {
+            $exists->delete();
+        }
+        $image = $this->image->store('public/categories');
         $path = (explode('/', $image));
-        return $category->image = $path[2];
+        $category->addMedia('storage/categories/' . $path[2])->toMediaCollection('category');
     }
+
 
     public function render()
     {

@@ -20,11 +20,10 @@ class CreateProductsTable extends Migration
             $table->text('description');
             $table->string('price');
             $table->string('meta_description')->nullable();
-            $table->string('image');
             $table->integer('views')->default(0);
             $table->boolean('is_popular')->default(false);
             $table->boolean('status')->default(true);
-            $table->boolean('is_hero')->default(false);
+            $table->boolean('is_trending')->default(false);
             $table->timestamps();
         });
     }

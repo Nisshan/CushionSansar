@@ -16,7 +16,7 @@ class Create extends Component
     public $name;
     public $description;
     public $price;
-    public $is_hero = false;
+    public $is_trending = false;
     public $is_popular = false;
     public $image;
     public $category = [];
@@ -27,7 +27,7 @@ class Create extends Component
         'name' => 'required| min:5',
         'description' => 'required',
         'price' => 'sometimes',
-        'is_hero' => 'required',
+        'is_trending' => 'required',
         'is_popular' => 'required',
         'image' => 'required',
         'images' => 'sometimes'
@@ -39,7 +39,7 @@ class Create extends Component
             'name' => 'required| min:5',
             'description' => 'required',
             'price' => 'sometimes',
-            'is_hero' => 'required | boolean',
+            'is_trending' => 'required | boolean',
             'is_popular' => 'required | boolean',
             'image' => 'required',
             'category.*' => 'required| exists:category,id'
@@ -57,34 +57,32 @@ class Create extends Component
             'slug' => $this->slug($this->name),
             'description' => $this->description,
             'price' => $this->price,
-            'is_hero' => $this->is_hero,
+            'is_trending' => $this->is_trending,
             'is_popular' => $this->is_popular,
-            'image' => $this->uploadImage()
         ]);
 
         $product->categories()->attach($this->category);
+        $this->uploadImage($product);
         $this->uploadImages($product);
 
-        session()->flash('success', 'product Inserted Successs');
+        session()->flash('success', 'product Inserted Success');
         return redirect()->route('products.index');
 
     }
 
-    public function uploadImage()
+    public function uploadImage($product)
     {
-        $image = $this->image->store('public/products');
+        $image = $this->image->store('public/product');
         $path = explode('/', $image);
-        return $path[2];
+        $product->addMedia('storage/product/' . $path[2])->toMediaCollection('product');
     }
 
     public function uploadImages($product)
     {
         foreach ($this->images as $image) {
-            $image = $image->store('public/products');
+            $image = $image->store('public/product');
             $path = explode('/', $image);
-            $product->images()->create([
-                'url' => $path[2]
-            ]);
+            $product->addMedia('storage/product/' . $path[2])->toMediaCollection('product-images');
         }
     }
 

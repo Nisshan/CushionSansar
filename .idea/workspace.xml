@@ -26,6 +26,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/cushionSansar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cushionSansar.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/app/DataTables/UsersDataTable.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Frontend/Pages/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Frontend/Pages/Home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
@@ -35,6 +36,38 @@
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/layout/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layout/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/frontend/pages/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/frontend/pages/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Category/Create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Category/Create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Category/Edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Category/Edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Product/Create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Product/Create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Product/Delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Product/Delete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Product/Edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Product/Edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/ProductImages.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/CategoryFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/ProductFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/ProductImagesFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_21_163757_create_categories_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_22_044631_create_products_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_23_051546_create_category_product_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_23_064404_create_product_images_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/CategorySeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/ProductSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/UserSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/delete.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/category/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/category/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/product/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/product/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/product/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/product/edit.blade.php" afterDir="false" />
+>>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/storage/app/livewire-tmp/0LnCA9ik8DIXbxzagA6lZk5ILiKad6-metaMjAxNjEyMTZfMDgzNzQ0LmpwZw==-.jpeg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/app/livewire-tmp/1nTNAIAehXYsa7wNwNlILUBFZxmxQ1-metaMjAxNjEyMTZfMTAxNDU5LmpwZw==-.jpeg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/app/livewire-tmp/A9uZuizeSAcey8JDrbjk7AxCdWUCN1-metaMjAxNjEyMTZfMDgzNzQ0LmpwZw==-.jpeg" beforeDir="false" />
@@ -59,6 +92,13 @@
       <change beforePath="$PROJECT_DIR$/storage/app/livewire-tmp/y8PytZ17j4v9Rmx5fU5ByJPlxQTy5M-metaMjAxNjEyMTZfMDkzMzMwLmpwZw==-.jpeg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/app/livewire-tmp/zPhNuwyHmb3Pi4eNfHupkAPubSmQOw-metaMjAxNjEyMTZfMDkzMzMwLmpwZw==-.jpeg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/app/livewire-tmp/zgcI1fSK9DMq6VkeQ4mxn2hJI1t6M3-metaMjAxNjEyMTZfMDg0MjU0LmpwZw==-.jpeg" beforeDir="false" />
+<<<<<<< Updated upstream
+=======
+      <change beforePath="$PROJECT_DIR$/storage/app/public/products/9QHGh4zBnIAvrZEcYkuLxZywzRz3OLSgJNDoXAgs.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/products/ISMAWKtFWWpwxYJggMfMiBBqftXwl4kiZwUFpp8u.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/products/dRlyHeXqjEgqw49zaoqqBqmpZlRw23P3B42M6fm8.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/products/qsPyKFBmjFcm9WogoJrTBXqgbioYYtPa2t5GuMuV.jpeg" beforeDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,6 +247,14 @@
       <path value="$PROJECT_DIR$/vendor/myclabs/php-enum" />
       <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
       <path value="$PROJECT_DIR$/vendor/intervention/image" />
+<<<<<<< Updated upstream
+=======
+      <path value="$PROJECT_DIR$/vendor/league/glide" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-medialibrary" />
+      <path value="$PROJECT_DIR$/vendor/spatie/image-optimizer" />
+      <path value="$PROJECT_DIR$/vendor/spatie/temporary-directory" />
+      <path value="$PROJECT_DIR$/vendor/spatie/image" />
+>>>>>>> Stashed changes
     </include_path>
   </component>
   <component name="ProjectId" id="1hfqpbxGC7j9Z1NMuTLy2GXyJwi" />
@@ -280,8 +328,13 @@
       <workItem from="1601007933671" duration="561000" />
       <workItem from="1601008521987" duration="3229000" />
       <workItem from="1601180172193" duration="8869000" />
+<<<<<<< Updated upstream
       <workItem from="1601447754350" duration="2764000" />
       <workItem from="1601526888330" duration="325000" />
+=======
+      <workItem from="1601447754350" duration="454000" />
+      <workItem from="1601799459431" duration="1607000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
@@ -340,10 +393,17 @@
       <screen x="0" y="27" width="1366" height="703" />
     </state>
     <state x="172" y="27" width="1012" height="703" key="SettingsEditor/0.27.1366.703@0.27.1366.703" timestamp="1601189086389" />
+<<<<<<< Updated upstream
     <state x="346" y="51" width="672" height="678" key="search.everywhere.popup" timestamp="1601536670283">
       <screen x="0" y="27" width="1366" height="703" />
     </state>
     <state x="346" y="51" width="672" height="678" key="search.everywhere.popup/0.27.1366.703@0.27.1366.703" timestamp="1601536670283" />
+=======
+    <state x="346" y="51" width="672" height="678" key="search.everywhere.popup" timestamp="1601547109529">
+      <screen x="0" y="27" width="1366" height="703" />
+    </state>
+    <state x="346" y="51" width="672" height="678" key="search.everywhere.popup/0.27.1366.703@0.27.1366.703" timestamp="1601547109529" />
+>>>>>>> Stashed changes
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

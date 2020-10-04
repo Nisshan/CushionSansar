@@ -10,7 +10,7 @@ class ProductList extends Component
     public function render()
     {
         return view('livewire.frontend.partials.product-list',[
-            'products' => Product::with('categories')->latest()->status()->ishero()->take(5)->get()
+            'products' => Product::with('categories')->latest()->take(5)->get()
         ]);
     }
 }

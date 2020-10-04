@@ -15,10 +15,10 @@
                     <x-label for="image"/>
                     <span class="required"> *</span>
                     <div class="form-group">
-                        <x-input type="file" name="image" wire:model="updated_image" class="mb-1"/>
-                        <x-error field="updated_image" class="error required"/> <br>
+                        <x-input type="file" name="image" wire:model="image" class="mb-1"/>
+                        <x-error field="image" class="error required"/> <br>
 
-                        <img src="{{$updated_image ? $updated_image->temporaryurl() : url('storage/categories/'.$image)}}" style="height: 100px; width:100px">
+                        <img src="{{$image ? $image->temporaryurl() : $category->getFirstMediaUrl('category') }}" style="height: 100px; width:100px">
                     </div>
                 </div>
                 <div class="form-group">
