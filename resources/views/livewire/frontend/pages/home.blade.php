@@ -1,4 +1,7 @@
 <div>
+@php
+phpinfo();
+@endphp
     <!-- banner part start-->
     <livewire:frontend.partials.to-home/>
     <!-- banner part start-->

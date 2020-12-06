@@ -1,5 +1,4 @@
 <div>
-
     <div class="card card-primary">
         <div class="card-header">
             <h3 class="card-title">Create New</h3>
@@ -22,6 +21,22 @@
                         @endif
 
                     </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="mb-3">
+                        <b>To Home <span class="required"> *</span> : </b>
+                    </div>
+                    <label>
+                        <input type="radio" wire:model="to_home"
+                               value="1" checked
+                        > &nbsp; Active
+                    </label> &nbsp; &nbsp; &nbsp;
+                    <label>
+                        <input type="radio" wire:model="to_home"  value="0"
+
+                        > &nbsp; Inactive
+                    </label> &nbsp;
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary">

@@ -21,6 +21,22 @@
                         <img src="{{$image ? $image->temporaryurl() : $category->getFirstMediaUrl('category') }}" style="height: 100px; width:100px">
                     </div>
                 </div>
+
+                <div class="form-group">
+                    <div class="mb-3">
+                        <b>To Home <span class="required"> *</span> : </b>
+                    </div>
+                    <label>
+                        <input type="radio" wire:model="to_home"
+                               value="1" checked
+                        > &nbsp; Active
+                    </label> &nbsp; &nbsp; &nbsp;
+                    <label>
+                        <input type="radio" wire:model="to_home"  value="0"
+
+                        > &nbsp; Inactive
+                    </label> &nbsp;
+                </div>
                 <div class="form-group">
                     <div class="mb-3">
                         <b>Status <span class="required"> *</span> : </b>

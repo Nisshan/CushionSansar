@@ -16,11 +16,13 @@ class Edit extends Component
     public $category_id;
     public $image;
     public $category;
+    public $to_home;
 
     public array $rules = [
         'name' => 'required| min:3',
         'status' => 'required',
-        'image' => 'sometimes'
+        'image' => 'sometimes',
+        'to_home' => 'required'
     ];
 
     public function updated($propertyName)
@@ -37,6 +39,7 @@ class Edit extends Component
         $this->category = Category::find($id);
         $this->name = $this->category->name;
         $this->status = $this->category->status;
+        $this->to_home = $this->category->to_home;
         $this->category_id = $id;
     }
 
@@ -45,6 +48,7 @@ class Edit extends Component
         $category = Category::find($this->category_id);
         $category->name = ucfirst($this->name);
         $category->status = $this->status;
+        $category->to_home = $this->to_home;
         $category->save();
 
         if ($this->image) {

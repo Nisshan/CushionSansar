@@ -34,3 +34,5 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/products/{id}',\App\Http\Livewire\Product\View::class)->name('products.show');
 });
 
+Route::get('{category}',\App\Http\Livewire\Frontend\Pages\SingleCategory::class)->name('category.page');
+

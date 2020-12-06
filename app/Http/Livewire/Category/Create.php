@@ -13,10 +13,12 @@ class Create extends Component
 
     public $name;
     public $image;
+    public $to_home = 0;
 
     public array $rules = [
         'name' => 'required| min:3',
-        'image' => 'sometimes'
+        'image' => 'sometimes',
+        'to_home' => 'required'
     ];
 
     public function updated($propertyName)
@@ -35,6 +37,7 @@ class Create extends Component
         $category = Category::create([
             'name' => ucfirst($this->name),
             'slug' => Str::slug($this->name),
+            'to_home' => $this->to_home
         ]);
         $category->addMedia('storage/categories/' . $path[2])->toMediaCollection('category');
         session()->flash('success', 'Category Created Success');

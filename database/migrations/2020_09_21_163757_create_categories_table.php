@@ -19,6 +19,7 @@ class CreateCategoriesTable extends Migration
             $table->string('slug');
             $table->integer('order')->nullable();
             $table->boolean('status')->default(true);
+            $table->boolean('to_home')->default(false);
             $table->timestamps();
         });
     }
